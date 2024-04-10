@@ -2,7 +2,7 @@ require "sinatra"
 require "sinatra/reloader"
 
 get("/") do
-  erb(:input_form, {:layout => :home})
+  erb(:input_form)
 end
 
 get("/process_roll") do
