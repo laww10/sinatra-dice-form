@@ -7,7 +7,7 @@ end
 
 get("/process_roll") do
 
-  @num_dice = params.fetch("number").to_i
+  @num_dice = params.fetch("dice").to_i
   @sides = params.fetch("sides").to_i
   @rolls = []
 
@@ -17,5 +17,6 @@ get("/process_roll") do
     
   end
 
-  erb(:flexible, {:layout => :body})
+  
+  erb(:flexible)
 end
